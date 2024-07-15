@@ -1,0 +1,28 @@
+#root {
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+main {
+  padding-top: 16px;
+}
+section {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.active {
+  color: blue;
+}
+.Navbar {
+  background-color: #58585a;
+  height: 60px;
+  color: white;
+}
+.imageSize {
+  width: 70%;
+}
