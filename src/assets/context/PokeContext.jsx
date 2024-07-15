@@ -7,7 +7,9 @@ export const PokeContext = createContext();
 export const PokeProvider = ({ children }) => {
   const [pokeList, setPokeList] = useState([]);
   const [selected, setSelected] = useState(null);
-  const [pokeDetails, setPokeDetails] = useState({});
+  const [pokeImagen, setPokeImagen] = useState("");
+  const [pokeStats, setPokeStats] = useState([]);
+  const [pokeType, setPokeType] = useState([]);
   const [namePoke, setNamePoke] = useState(selected);
   const navigate = useNavigate();
 
@@ -37,10 +39,14 @@ export const PokeProvider = ({ children }) => {
     handleChange,
     viewDetails,
     selected,
-    setPokeDetails,
-    pokeDetails,
+    setPokeImagen,
+    pokeImagen,
     namePoke,
     ApiPath,
+    pokeStats,
+    setPokeStats,
+    pokeType,
+    setPokeType,
   };
 
   return (
